@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_ted1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/tednew1"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:labelFor="@id/iv_ted1" />
+
+        <ImageView
+            android:id="@+id/iv_ted2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/tednew2"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:labelFor="@id/iv_ted1"
+            android:layout_below="@id/iv_ted1" />
+
+        <ImageView
+            android:id="@+id/iv_ted3"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/tednew3"
+            android:scaleType="centerCrop"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:labelFor="@id/iv_ted1"
+            android:layout_below="@id/iv_ted2" />
+
+
+        <TextView
+            android:id="@+id/tv_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_ted1"
+            android:layout_alignLeft="@id/tv_ted1"
+            android:text="Jeremy Forbes"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/tv_ted1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_ted1"
+            android:layout_alignLeft="@id/iv_ted1"
+            android:text="A teen scientist's invention to help wounds heal"
+            android:layout_margin="5dp"
+
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6:58"
+            android:layout_alignBottom="@+id/tv_ted1"
+            android:layout_alignRight="@id/iv_ted1"
+            android:layout_marginEnd="22dp"
+            android:textColor="#FFFFFF"
+
+            />
+        <TextView
+            android:id="@+id/tv_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Susan Emmett"
+            android:textColor="#FFFFFF"
+            android:layout_above="@id/tv_ted2"
+            android:layout_alignLeft="@id/tv_ted2"
+            />
+        <TextView
+            android:id="@+id/tv_ted2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="This simple test can help kids hear better"
+            android:layout_margin="5dp"
+            android:layout_alignBottom="@id/iv_ted2"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_alignLeft="@id/iv_ted2"
+            />
+        <TextView
+            android:id="@+id/tv_time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:34"
+            android:layout_alignRight="@id/iv_ted2"
+            android:layout_alignBottom="@id/tv_ted2"
+            android:layout_marginRight="22dp"
+            android:textColor="#FFFFFF"
+            />
+        <TextView
+            android:id="@+id/tv_name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helen Gillet"
+            android:layout_above="@id/tv_ted3"
+
+            android:layout_alignLeft="@id/tv_ted3"
+            android:textColor="#FFFFFF"
+            />
+        <TextView
+            android:id="@+id/tv_ted3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Is the world getting better or worse? A look at the numbers"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_alignLeft="@id/iv_ted3"
+            android:layout_margin="5dp"
+            android:layout_alignBottom="@id/iv_ted3"
+            />
+        <TextView
+            android:id="@+id/tv_time3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7:34"
+            android:layout_alignRight="@id/iv_ted3"
+            android:layout_alignBottom="@id/tv_ted3"
+            android:layout_marginRight="22dp"
+            android:textColor="#FFFFFF"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>
+

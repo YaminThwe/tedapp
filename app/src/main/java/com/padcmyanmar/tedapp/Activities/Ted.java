@@ -1,4 +1,4 @@
-package com.padcmyanmar.tedapp;
+package com.padcmyanmar.tedapp.Activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class Ted extends AppCompatActivity {
+import com.padcmyanmar.tedapp.R;
+
+public class Ted extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

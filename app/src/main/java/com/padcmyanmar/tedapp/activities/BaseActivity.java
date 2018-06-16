@@ -1,4 +1,4 @@
-package com.padcmyanmar.tedapp.Activities;
+package com.padcmyanmar.tedapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 

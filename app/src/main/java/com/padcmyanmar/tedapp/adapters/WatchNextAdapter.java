@@ -7,22 +7,23 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.padcmyanmar.tedapp.R;
+import com.padcmyanmar.tedapp.viewholders.TedViewHolders;
 import com.padcmyanmar.tedapp.viewholders.WatchNextViewHolder;
 
-public class WatchNextAdapter extends RecyclerView.Adapter
+public class WatchNextAdapter extends RecyclerView.Adapter<WatchNextViewHolder>
 {
 
     @NonNull
     @Override
-    public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    public WatchNextViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         LayoutInflater layoutinfalter= LayoutInflater.from(parent.getContext());
-        View view=layoutinfalter.inflate(R.layout.activity_ted_details,parent,false);
+        View view=layoutinfalter.inflate(R.layout.activity_watch_next_view_holder,parent,false);
         return new WatchNextViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull WatchNextViewHolder holder, int position) {
 
     }
 

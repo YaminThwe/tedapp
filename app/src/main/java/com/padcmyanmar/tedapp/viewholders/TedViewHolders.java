@@ -3,21 +3,21 @@ package com.padcmyanmar.tedapp.viewholders;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.padcmyanmar.tedapp.Delegates.TedTalkDelegates;
+import com.padcmyanmar.tedapp.delegates.TedTalkDelegates;
 
 public class TedViewHolders extends RecyclerView.ViewHolder
 {
-    private TedTalkDelegates TedWatchNextDelegate;
+    private TedTalkDelegates mTedWatchNextDelegate;
 
     public TedViewHolders(View itemView,TedTalkDelegates tedWatchNextDelegate)
     {
         super(itemView);
-        TedWatchNextDelegate=tedWatchNextDelegate;
+        mTedWatchNextDelegate=tedWatchNextDelegate;
         itemView.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view) {
-                TedWatchNextDelegate.onTapNews();
+                mTedWatchNextDelegate.onTapNews();
             }
         });
     }

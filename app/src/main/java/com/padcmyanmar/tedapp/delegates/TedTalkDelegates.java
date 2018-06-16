@@ -1,4 +1,4 @@
-package com.padcmyanmar.tedapp.Delegates;
+package com.padcmyanmar.tedapp.delegates;
 
 public interface TedTalkDelegates
 {

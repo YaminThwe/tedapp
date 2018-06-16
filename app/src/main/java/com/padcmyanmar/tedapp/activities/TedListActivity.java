@@ -1,4 +1,4 @@
-package com.padcmyanmar.tedapp.Activities;
+package com.padcmyanmar.tedapp.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.widget.LinearLayout;
 
-import com.padcmyanmar.tedapp.Delegates.TedTalkDelegates;
+import com.padcmyanmar.tedapp.data.models.TedNewsModels;
+import com.padcmyanmar.tedapp.delegates.TedTalkDelegates;
 import com.padcmyanmar.tedapp.R;
 import com.padcmyanmar.tedapp.adapters.TedAdapters;
 
@@ -27,6 +28,9 @@ public class TedListActivity extends BaseActivity implements TedTalkDelegates
         TedAdapters tedadapter=new TedAdapters(this);
         rvTeds.setAdapter(tedadapter);
         rvTeds.setLayoutManager(new LinearLayoutManager(getApplicationContext(), LinearLayout.VERTICAL, false));
+
+        TedNewsModels.getObjInstance().loadTedNewsList();
+
 
     }
 

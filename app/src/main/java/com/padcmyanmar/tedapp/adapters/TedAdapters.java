@@ -6,17 +6,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.padcmyanmar.tedapp.Activities.TedAppActivity;
-import com.padcmyanmar.tedapp.Delegates.TedWatchNextDelegate;
+import com.padcmyanmar.tedapp.activities.TedListActivity;
+import com.padcmyanmar.tedapp.delegates.TedTalkDelegates;
 import com.padcmyanmar.tedapp.R;
 import com.padcmyanmar.tedapp.viewholders.TedViewHolders;
 
 public class TedAdapters extends RecyclerView.Adapter
 {
-    private TedWatchNextDelegate tednextDelegate;
-    public TedAdapters(TedAppActivity newsDelegate)
+    private TedTalkDelegates tednextDelegate;
+    public TedAdapters(TedListActivity newDelegate)
     {
-        tednextDelegate= newsDelegate;
+        tednextDelegate=  newDelegate;
     }
     @NonNull
     @Override
@@ -25,7 +25,6 @@ public class TedAdapters extends RecyclerView.Adapter
 
         LayoutInflater layoutinfalter= LayoutInflater.from(parent.getContext());
         View view=layoutinfalter.inflate(R.layout.view_holder_ted,parent,false);
-
         return new TedViewHolders(view,tednextDelegate);
 
     }
